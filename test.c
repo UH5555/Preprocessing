@@ -1,23 +1,38 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-extern int Add(int x, int y);
+//extern int Add(int x, int y);
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int arr[10] = { 0 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = i;
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	int c = Add(a, b);
+//	printf("c=%d\n", c);
+//	return 0;
+//}
 
-int main()
-{
-	int a = 10;
-	int b = 20;
-	int arr[10] = { 0 };
-	int i = 0;
-	for (i = 0; i < 10; i++)
-	{
-		arr[i] = i;
-	}
-	for (i = 0; i < 10; i++)
-	{
-		printf("%d ", arr[i]);
-	}
-	int c = Add(a, b);
-	printf("c=%d\n", c);
-	return 0;
-}
+//预编译 - 编译 - 汇编
+//预编译(文本操作)
+//1.#include 头文件的包含
+//2.注释删除 使用空格替换注释
+//3.#define 
+
+//编译 （把C语言代码翻译成汇编代码）
+//1.语法分析
+//2.词法分析
+//3.语义分析
+//4.符号汇总（函数名、全局变量）
+
+//汇编  （把汇编代码转换成了二进制指令）
+//形成符号表
