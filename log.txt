@@ -1,0 +1,10 @@
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =0
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =1
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =2
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =3
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =4
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =5
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =6
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =7
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =8
+file:U:\ѧϰ\C\code\learning\test_0513\test.c line:56 time:21:19:24 i =9

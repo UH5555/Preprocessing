@@ -36,3 +36,26 @@
 
 //汇编  （把汇编代码转换成了二进制指令）
 //形成符号表
+
+#define MAX 100
+#include <stdio.h>
+//预定义符号
+//int main()
+//{
+//	/*printf("%s\n", __FILE__);
+//	printf("%d\n", __LINE__);
+//	printf("%s\n", __DATE__);
+//	printf("%s\n", __TIME__);*/
+//	//写日志文件
+//	int i = 0;
+//	int arr[10] = { 0 };
+//	FILE* pf = fopen("log.txt", "w");
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = i;
+//		fprintf(pf, "file:%s line:%d time:%s i =%d\n", __FILE__, __LINE__, __TIME__, i);
+//	}
+//	fclose(pf);
+//
+//	return 0;
+//}
