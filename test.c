@@ -111,15 +111,51 @@
 //	return 0;
 //}
 
-#define CAT(X,Y) X##Y
+//#define CAT(X,Y) X##Y
+//
+//int main()
+//{
+//	int Class83 = 2018;
+//	//printf("%d\n", Class83);
+//	printf("%d\n", CAT(Class,83));
+//	//printf("%d\n", Class##83);
+//	//printf("%d\n", Class83);
+//
+//	return 0;
+//}
 
-int main()
-{
-	int Class83 = 2018;
-	//printf("%d\n", Class83);
-	printf("%d\n", CAT(Class,83));
-	//printf("%d\n", Class##83);
-	//printf("%d\n", Class83);
+//#define MAX(X,Y) ((X)>(Y)?(X):(Y))
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 11;
+//	int max = MAX(a++, b++);
+//	//int max = ((a++)>(b++)?(a++):(b++));
+//	printf("%d\n", max);//12
+//	printf("%d\n", a);//11
+//	printf("%d\n", b);//13
+//	return 0;
+//
+//}
 
-	return 0;
-}
+//int Max(int x, int y)
+//{
+//	return (x > y ? x : y);
+//}
+//
+//#define MAX(X,Y) ((X)>(Y)?(X):(Y))
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = Max(a, b);
+//	//函数在调用的时候
+//	//会有函数调用和返回的开销
+//	printf("%d\n", max);
+//	max = MAX(a, b);
+//	//预处理阶段就完成了替换
+//	printf("%d\n", max);
+//	return 0;
+//}
