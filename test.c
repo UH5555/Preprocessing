@@ -159,3 +159,108 @@
 //	printf("%d\n", max);
 //	return 0;
 //}
+
+
+//宏会让代码变长
+//宏无法调试
+//宏由于类型无关，不够严谨
+//宏可能带来运算符优先级的问题，导致程序出错
+//#define TEST(X,Y) printf("test\n")
+//
+//int main()
+//{
+//	TEST();
+//	TEST();
+//	TEST();
+//	return 0;
+//}
+
+//#define SIZEOF(type) sizeof(type)
+//
+//int main()
+//{
+//	int ret = SIZEOF(int);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+//#define MALLOC(num,type) (type*)malloc(num*sizeof(type))
+//
+//int main()
+//{
+//	//int* p = (int*)malloc(10 * sizeof(int));
+//	int* p = MALLOC(10, int);
+//	return 0;
+//}
+
+//#define MAX 100
+//
+//int main()
+//{
+//	printf("%d\n", MAX);
+//#undef MAX
+//	printf("%d\n", MAX);
+//	return 0;
+//}
+
+//#define DEBUG
+//
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = 0;
+//#ifdef DEBUG//条件定义，如果满足DEBUG，则运行printf。
+//		printf("%d ", arr[i]);
+//#endif
+//	}
+//	return 0;
+//}
+
+//#define DEBUG
+//
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		arr[i] = 0;
+//#if 1
+//		printf("%d ", arr[i]);
+//#endif
+//	}
+//	return 0;
+//}
+
+//#define DEBUG 0
+//
+//int main()
+//{
+////#if defined(DEBUG)
+////	printf("hehe\n");
+////#endif
+//#ifdef DEBUG
+//	printf("hehe\n");
+//#endif
+//#if !defined(DEBUG)
+//	printf("hehe\n");
+//#endif
+//
+//#ifndef DEBUG
+//	printf("hehe\n");
+//#endif
+//	return 0;
+//}
+
+#include <stdio.h>
+#include "add.h"
+
+int main()
+{
+	int ret = Add(2, 3);
+	printf("ret = %d\n", ret);
+	return 0;
+}
