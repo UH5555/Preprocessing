@@ -255,12 +255,52 @@
 //	return 0;
 //}
 
-#include <stdio.h>
-#include "add.h"
+//#include <stdio.h>
+//#include "add.h"
+//
+//int main()
+//{
+//	int ret = Add(2, 3);
+//	printf("ret = %d\n", ret);
+//	return 0;
+//}
+//
+//int main()
+//{
+//	//struct S s;
+//	printf("%d\n", offsetof(struct S, c1));
+//	printf("%d\n", offsetof(struct S, a));
+//	printf("%d\n", offsetof(struct S, c2));
+//	return 0;
+//}
+//
+//#define OFFSETOF(struct_name,member_name) (int)&(((struct_name*)0)->member_name)
+//
+//int main()
+//{
+//	//struct S s;
+//	printf("%d\n", OFFSETOF(struct S, c1));
+//	printf("%d\n", OFFSETOF(struct S, a));
+//	printf("%d\n", OFFSETOF(struct S, c2));
+//	return 0;
+//}
 
 int main()
 {
-	int ret = Add(2, 3);
-	printf("ret = %d\n", ret);
+	unsigned char puc[4];
+	struct tagPIM
+	{
+		unsigned char ucPim1;
+		unsigned char ucDate0 : 1;
+		unsigned char ucDate1 : 2;
+		unsigned char ucDate2 : 3;
+	}*pstPimDate;
+	pstPimDate = (struct tagPIM*)puc;
+	memset(puc, 0, 4);
+	pstPimDate->ucPim1 = 2;
+	pstPimDate->ucDate0 = 3;
+	pstPimDate->ucDate1 = 4;
+	pstPimDate->ucDate2 = 5;
+	printf("%02x %02x %02x %02x", puc[0], puc[1], puc[2], puc[3]);
 	return 0;
 }
